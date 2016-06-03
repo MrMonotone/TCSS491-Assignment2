@@ -22,7 +22,14 @@
 <div style="position: relative; top:640px">
 	<p>
 		<br><u><b>CONTROLS</b></u>
-		<br>Pause: P
+		<br> Pause: P
+		<br><u><b>SIMULATION RULES</b></u>
+		<br> 1. Circles will chase the closest circle with a radius smaller than it.
+		<br> 2. Circles will run away from circles with a larger radius than it.
+		<br> 3. If a circle collides with another circle that has the same color and its radius is greater then its radius is increased by 1/3 of that circle's radius stopping at maxRadius. The smaller circle is removed.
+		<br> 4. If a circle collides with another circle that is a different color and its radius is greater then its radius is increased by 1/3 of that circle's radius stopping at maxRadius. The smaller circle is removed.
+		<br> 5. If a circle collides with another circle that has the same radius and that radius is not the maxRadius then there is a 50% chance four circles of each color are spawned on the map with 1/2 the radius . Both circles are removed.
+		<br> 6. If a circle collides with another circle that has the same radius and that radius is the maxRadius then there is a 50% chance four circles of each color are spawned on the map with 1/4 the radius . Both circles are removed.
 	</p>
 </div>
 </html>
